@@ -1,0 +1,176 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f0f8ff; /* Color de fondo suave y amigable */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-behavior: smooth; /* Desplazamiento suave para los anclajes del menú */
+}
+
+.navbar {
+    background-color: #4CAF50; /* Verde vibrante para la barra de navegación */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1.5rem;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #c8e6c9; /* Verde más claro al pasar el mouse */
+}
+
+header {
+    background-color: #4CAF50; /* Verde vibrante */
+    color: white;
+    padding: 6rem 1rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 0.5rem;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.intro h2 {
+    color: #00796B;
+    font-size: 2rem;
+}
+
+.contenido-temas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.contenido-temas h2 {
+    width: 100%;
+    text-align: center;
+    color: #0d47a1;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.tema {
+    background-color: #e3f2fd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    flex: 1 1 45%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.tema:hover {
+    transform: translateY(-5px);
+}
+
+.tema h3 {
+    color: #0d47a1;
+    margin-top: 0;
+}
+
+.proximamente {
+    text-align: center;
+    background-color: #FFC107;
+    color: #333;
+    padding: 2rem;
+}
+
+.proximamente h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contacto {
+    text-align: center;
+    background-color: #b2dfdb; /* Un color suave para la sección de contacto */
+}
+
+.contacto h2 {
+    color: #004d40;
+}
+
+.boton-contacto {
+    display: inline-block;
+    background-color: #00796B;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 1rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.boton-contacto:hover {
+    background-color: #004d40;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .navbar a {
+        padding: 0 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .tema {
+        flex: 1 1 100%;
+    }
+}
